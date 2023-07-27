@@ -13,7 +13,15 @@ Weather is sometimes difficult to predict. This accurate weather app allows to f
 
 ## Click here for a demonstration
 
+https://tocopro.github.io/Weather_App_Project/
+
 ## The Image of the App front page
 
+![Alt text](image.png)
+
+
 ## The GIF of the functionality of the app
+
+[Title](<../Downloads/Untitled_ Jul 26, 2023 8_35 PM.webm>)
+"C:\Users\nicwa\Weather_App\Untitled_ Jul 26, 2023 8_35 PM.webm"
 
