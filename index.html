@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Application</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-----------------------------Header section Simple text head that responds to screen resize----------------------->
+<header>
+  <h1>Weather Dashboard</h1>
+</header>
+<!-----------------------------City search section where the user can enter a city by name and get the
+weather currently and five days into the future----------------------->
+<section class="section_1">
+  <h2>Search for a city</h2>
+  <label id="search_inst">Enter a City</label>
+  <label for="city-search"></label><input type="text" id="city-search" placeholder="new york..">
+  <!-----------------------------The search button calls the function----------------------->
+  <button type="button" id="city-search-button" onclick="search_city()">Search</button>
+</section>
+<section class="section_2">
+  <div id="city-buttons">
+    <!-----------------------------The buttons on the left of the page are linked to the weather conditions in
+    those cities and the five day forecast----------------------->
+    <div id="atlanta">
+      <button type="button" id="atlanta_button" value="atlanta" onclick="cities_weather(this.value)" >Atlanta</button>
+    </div>
+    <!-----------------------------Each button has the value to the name of the city it calls up by the value function
+    ----------------------->
+    <div id="denver">
+      <button type="button" id="denver_button" value="denver" onclick="cities_weather(this.value)">Denver</button>
+    </div>
+    <div id="seattle">
+      <button id="seattle_button" value="seattle" onclick="cities_weather(this.value)">Seattle</button></div>
+    <div id="san_fransisco">
+      <button id="san_fransisco_button" value="san fransisco" onclick="cities_weather(this.value)">San Fransisco</button>
+    </div>
+    <div id="orlando">
+      <button id="orlando_button" value="orlando" onclick="cities_weather(this.value)">Orlando</button>
+    </div>
+    <div id="new_york">
+      <button id="new_york_button" value="new york" onclick="cities_weather(this.value)">New York</button>
+    </div>
+    <div id="chicago">
+      <button id="chicago_button" value="chicago" onclick="cities_weather(this.value)">Chicago</button>
+    </div>
+    <div id="austin">
+      <button id="austin_button" value="austin" onclick="cities_weather(this.value)">Austin</button>
+    </div>
+  </div>
+</section>
+<section class="section_3">
+  <!-----------------------------The main screen display will give the weather for the current day in the
+  selected cities----------------------->
+  <div id="display_screen">
+    <!-----------------------------The default city was london -------------------->
+    <div id="city_name">London</div>
+    <span id="day_weather_icon">
+      <img id="main_image_display" src="images_weather/01d.png" alt="Oops!"/>
+      <div id="display_text">
+        <span style="font-size: 20px; padding-right: 10px ">Temperature</span>
+      <span id="daily_temp">28</span><span style="padding-left: 5px">C&deg;</span><br>
+      <span style="font-size: 20px; padding-right: 10px ">Wind</span>
+      <span id="daily_wind">4</span><span style="padding-left: 5px">kph</span><br>
+      <span style="font-size: 20px; padding-right: 10px ">Humidity</span>
+      <span id="daily_humidity">20</span><span style="padding-left: 5px">%</span>
+      </div>
+    </span>
+    </div>
+</section>
+<!----------------------------This section provides all the information forecasted in the five days by the api
+each box will hold all the information forecasted and the images which change as the user changes the cities
+selected----------------------->
+<section class="section_4">
+  <div id="five_day_forecast" style="font-size: 22px; font-weight: bold"> 5 Day ForeCast </div>
+  <div id="day_box1">
+    <div id="date1">1/1/2000</div>
+    <img id="weather_icon1" src="images_weather/01d.png" alt="Oops!"/>
+    <div id="temp1">Temp: 24 C</div>
+    <div id="wind1">Wind: 5 kph</div>
+    <div id="humidity1">Humidity 20%</div>
+  </div>
+  <div id="day_box2">
+    <div id="date2">1/1/2000</div>
+    <img id="weather_icon2" src="images_weather/01d.png" alt="Oops!"/>
+    <div id="temp2">Temp: 24 C</div>
+    <div id="wind2">Wind: 5 kph</div>
+    <div id="humidity2">Humidity 20%</div>
+  </div>
+  <div id="day_box3">
+    <div id="date3">1/1/2000</div>
+    <img id="weather_icon3" src="images_weather/01d.png" alt="Oops!"/>
+    <div id="temp3">Temp: 24 C</div>
+    <div id="wind3">Wind: 5 kph</div>
+    <div id="humidity3">Humidity 20%</div>
+  </div>
+  <div id="day_box4">
+    <div id="date4">1/1/2000</div>
+    <img id="weather_icon4" src="images_weather/01d.png" alt="Oops!"/>
+    <div id="temp4">Temp: 24 C</div>
+    <div id="wind4">Wind: 5 kph</div>
+    <div id="humidity4">Humidity 20%</div>
+  </div>
+  <div id="day_box5">
+    <div id="date5">1/1/2000</div>
+    <img id="weather_icon5" src="images_weather/01d.png" alt="Oops!"/>
+    <div id="temp5">Temp: 24 C</div>
+    <div id="wind5">Wind: 5 kph</div>
+    <div id="humidity5">Humidity 20%</div>
+  </div>
+</section>
+<script src="index.js"></script>
+
+</body>
+</html>
+

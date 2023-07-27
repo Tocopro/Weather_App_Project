@@ -1,0 +1,130 @@
+
+/*--------------------------The body and individual styling by different tags----------------------------------------------*/
+body
+{
+    background-color: white;
+
+}
+header
+{
+    background-color: chartreuse;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#city-search
+{
+    position: absolute;
+    left: 10px;
+    top: 180px;
+}
+#city-search-button
+{
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#search_inst
+{
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    padding-top: 10px;
+}
+#city-buttons
+{
+    position: absolute;
+    top: 250px;
+}
+#atlanta, #denver, #seattle, #san_fransisco, #orlando, #new_york, #chicago, #austin
+{
+    display: flex;
+    border: solid transparent;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+#atlanta_button, #denver_button, #seattle_button, #san_fransisco_button,
+#orlando_button, #new_york_button, #chicago_button, #austin_button
+{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#display_screen
+{
+    display: flex;
+    border: solid black;
+    height: 250px;
+    width: 700px;
+    position: absolute;
+    left: 200px;
+    justify-content: center;
+    border-radius: 8px;
+}
+#five_day_forecast
+{
+    position: absolute;
+    left: 200px;
+    top: 480px;
+}
+#day_box1, #day_box2, #day_box3, #day_box4, #day_box5
+{
+    height: 320px;
+    width: 150px;
+    border: solid black;
+    display: inline-block;
+    position: relative;
+    top: 350px;
+    left: 150px;
+    border-radius: 8px;
+}
+#date1, #weather_icon1, #temp1, #wind1, #humidity1,
+#date2, #weather_icon2, #temp2, #wind2, #humidity2,
+#date3, #weather_icon3, #temp3, #wind3, #humidity3,
+#date4, #weather_icon4, #temp4, #wind4, #humidity4,
+#date5, #weather_icon5, #temp5, #wind5, #humidity5
+{
+    text-align: center;
+    padding-top: 20px;
+}
+#main_image_display
+{
+    padding: 20px;
+    max-height: 100%;
+    max-width: 100%;
+}
+#display_text
+{
+    font-size: 18px;
+    word-spacing: 2em;
+    font-weight: bold;
+}
+#city_name
+{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font-size: 30px;
+}
+
+/*-----------------------------screen resize styling---------------------------------------*/
+@media screen and (min-width: 480px) and (max-width: 680px)
+{
+    #display_screen
+    {
+        width: 250px;
+    }
+    #city_name
+    {
+        top: 120px;
+    }
+    
+}
+
+
+
